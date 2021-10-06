@@ -48,37 +48,11 @@ function main(){
             m.textContent = minutes;
             s.textContent = seconds;
 
-        
-        /*    let days = Math.floor(date / (1000*3600*24));
-            let hours = Math.floor((date % (1000*3600*24))/(1000*3600));
-            let minutes = Math.floor(((date % (1000*3600*24))%(1000*3600)) / (1000*60));
-            let seconds = Math.floor(((((date % (1000*3600*24))%(1000*3600*60)) % (1000*3600)) % (1000*60))/ 1000);
-            days = days.toString();
-            hours = hours.toString();
-            minutes = minutes.toString();
-            seconds = seconds.toString();    
-            if (days.length < 2){
-                days = "0" + days;
-            }
-            if (hours.length < 2){
-                hours = "0" + hours;
-            }
-            if (minutes.length < 2){
-                minutes = "0" + minutes;
-            }
-            if (seconds.length < 2){
-                seconds = "0" + seconds;
-            d.textContent = days;
-            h.textContent = hours;
-            m.textContent = minutes;
-            s.textContent = seconds;*/
+
         }else if(date > -86400000 && date < 0 && year === false){
             const div = document.querySelector(".container");
             div.innerHTML = "Happy BirthDay !!";
             div.style.fontSize = "100px";
-
-
-            
             
         }else if (date < -86400000) {
             const div = document.querySelector(".container");
@@ -120,7 +94,8 @@ function getbirth(r = false){
     body.style.backgroundImage = "url('/img/birthday.jpg')";
     const birthday = prompt("type your birth day ex:(15 Jul 2021)");
     birth =  Date.parse(birthday);
-    year = false;
+    if (year === true){
+        year = false;}
     
     if (isNaN(birth)){
         getbirth();
