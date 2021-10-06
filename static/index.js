@@ -10,7 +10,8 @@ function main(){
     const m = document.getElementById("minutes");
     const s = document.getElementById("seconds");
     
-
+    getbirth(r = true);
+    getbirth();
     setInterval(() => {
         let now = Date.now();
         let date = birth - now;
@@ -100,8 +101,7 @@ function main(){
         
 
     },1000);
-    getbirth(r = true);
-    getbirth();
+    
 
 }
 
