@@ -9,9 +9,7 @@ function main(){
     const h = document.getElementById("hours");
     const m = document.getElementById("minutes");
     const s = document.getElementById("seconds");
-    getbirth();
-    getbirth(r = true);
-    getbirth();
+    
 
     setInterval(() => {
         let now = Date.now();
@@ -99,9 +97,11 @@ function main(){
             getbirth(r = true);
             
         }
+        
 
     },1000);
-    
+    getbirth(r = true);
+    getbirth();
 
 }
 
