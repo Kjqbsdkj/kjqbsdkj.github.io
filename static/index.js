@@ -119,6 +119,7 @@ function getbirth(r = false){
     body.style.backgroundImage = "url('/img/birthday.jpg')";
     const birthday = prompt("type your birth day ex:(15 Jul 2021)");
     birth =  Date.parse(birthday);
+    year = false;
     
     if (isNaN(birth)){
         getbirth();
