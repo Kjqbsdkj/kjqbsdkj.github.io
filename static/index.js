@@ -107,8 +107,7 @@ function main(){
 
 
 function getbirth(r = false){
-    var body = document.querySelector("#bod");  
-    body.style.backgroundImage = "url('/img/newyear.jpg')";
+    var body = document.querySelector("#bod");
     if (r){
         body.style.backgroundImage = "url('/img/newyear.jpg')";
         body.style.animationName = "opai";
