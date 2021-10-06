@@ -12,6 +12,7 @@ function main(){
     
     getbirth(r = true);
     getbirth();
+    
     setInterval(() => {
         let now = Date.now();
         let date = birth - now;
