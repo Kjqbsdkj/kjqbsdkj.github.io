@@ -115,6 +115,7 @@ function getbirth(r = false){
         year = true;
         return 0;
     }
+    body.style.backgroundImage = "url('/img/newyear.jpg')";
     body.style.backgroundImage = "url('/img/birthday.jpg')";
     const birthday = prompt("type your birth day ex:(15 Jul 2021)");
     birth =  Date.parse(birthday);
